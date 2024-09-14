@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productivity Tracker App</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+
+    <div class="center">
+    <h1>Productivity Tracker App</h1>
+      <h4>Nama  : Tarisha Falah Basuki</h4>
+      <h4>NRP   : 5025231043</h4>
+    </div>
+
+    <div class="left">
+      <h2>Current Activity</h2>
+      <p>List of activities that's on progress</p>
+    </div>
+
+    <div class="Activity1">
+      <h4>Activity 1</h4> 
+      <div class="stopwatch" id="stopwatch1">00:00:00</div>
+      <p>
+        <button class="stop" data-id="1">Stop</button>
+        <button class="start" data-id="1">Start</button>
+      </p>
+    </div>
+
+    <div class="Activity2">
+      <h4>Activity 2</h4> 
+      <div class="stopwatch" id="stopwatch2">00:00:00</div>
+      <p>
+        <button class="stop" data-id="2">Stop</button>
+        <button class="start" data-id="2">Start</button>
+      </p>
+    </div>
+
+    <div class="Activity3">
+      <h4>Activity 3</h4> 
+      <div class="stopwatch" id="stopwatch3">00:00:00</div> 
+      <p>
+        <button class="stop" data-id="3">Stop</button>
+        <button class="start" data-id="3">Start</button>
+      </p>
+    </div>
+
+    <div class="left">
+      <h2>Past Activity</h2>
+      <p>List of activities that has been done</p>
+    </div>
+
+    <table border="1">
+      <thead>
+          <tr>
+              <th>Activity</th>
+              <th>Time</th>
+              <th>Performance (%)</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr data-id="1">
+              <td>Activity 1</td>
+              <td id="time-1">00:00:00</td>
+              <td>
+                  <input type="number" id="performance-1" min="1" max="100" value="0">
+                  <span>%</span> <!-- Simbol % -->
+              </td>
+          </tr>
+          <tr data-id="2">
+              <td>Activity 2</td>
+              <td id="time-2">00:00:00</td>
+              <td>
+                  <input type="number" id="performance-2" min="1" max="100" value="0">
+                  <span>%</span> <!-- Simbol % -->
+              </td>
+          </tr>
+          <tr data-id="3">
+              <td>Activity 3</td>
+              <td id="time-3">00:00:00</td>
+              <td>
+                  <input type="number" id="performance-3" min="1" max="100" value="0">
+                  <span>%</span> <!-- Simbol % -->
+              </td>
+          </tr>
+      </tbody>
+  </table>
+          
+  <script src="script.js"></script>
+  </body>
+</html>
